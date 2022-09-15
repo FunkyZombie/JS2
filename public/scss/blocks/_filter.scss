@@ -1,0 +1,193 @@
+.filters {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1600px) {
+  .filters {
+      margin-top: 51px;
+      margin-bottom: 64px;
+  }
+}
+
+.filters .container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .filters .container {
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .filters .container {
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: flex-start;
+  }
+}
+
+.filtersRight {
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6f6e6e;
+}
+
+@media (min-width: 1600px) {
+  .filtersRight {
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 320px;
+  }
+}
+
+.filtersRight img {
+  position: relative;
+  bottom: 1px;
+  margin-left: 9px;
+}
+
+.filtersRight > div:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media (min-width: 375px) {
+  .filtersRight > div:not(:last-child) {
+      margin-right: 24px;
+  }
+}
+
+.filtersLeft .filterLabel {
+  display: none;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.filterLabelPink {
+  color: #ef5b70 !important;
+  left: 16px;
+  top: 13px;
+}
+
+.filterIconPink {
+  left: 16px;
+  top: 13px;
+}
+
+@media (min-width: 768px) {
+  .filtersLeft .filterLabel {
+      display: inline;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+  }
+}
+
+.filtersLeft .filterIcon {
+  width: 37px;
+  height: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .filtersLeft .filterIcon {
+      width: 15px;
+      height: 10px;
+      margin-left: 11px;
+  }
+}
+
+.filtersLeft {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.filterPopup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360px;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 46px 16px 16px 16px;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.filterCategoryHeader {
+  font-size: 14px;
+  line-height: 37px;
+  color: #ef5b70;
+  padding-left: 11px;
+  min-height: 37px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filterCategoryHeader:before {
+  content: "";
+  width: 5px;
+  min-height: inherit;
+  background: #ef5b70;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.filterCategory:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.filterCategory a {
+  display: block;
+  text-decoration: none;
+  padding-left: 34px;
+  padding-right: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+
+.filterCategory a:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.filterSizeWrap {
+  cursor: pointer;
+}
+
+.filterSize {
+  position: relative;
+}
+
+.filterSizes {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 79px;
+  height: 103px;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 7px 9px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+
+.filterSizes > div:not(:last-child) {
+  margin-bottom: 4px;
+}

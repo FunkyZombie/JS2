@@ -1,0 +1,55 @@
+.slider {
+    &__collection {
+        &-list {
+            margin: 64px 0 0 0;
+            display: flex;
+        }
+
+        
+        &-item svg {
+            fill: #6F6E6E;
+            margin: 0 0 2px 5px;
+        }
+
+        &-select {
+            margin-left: 15px;
+            padding-right: 20px;
+            border: none;
+            min-width: 128px;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-align: right;
+
+            background-image: url(../image/svg/arrow-d.svg);
+            background-repeat: no-repeat;
+            background-position-x: 99%;
+            background-position-y: 47%;
+            
+            /* for Firefox */
+            -moz-appearance: none;
+            /* for Chrome */
+            -webkit-appearance: none;
+
+            &::-ms-expand {
+                /* IE */
+                display: none;
+            }
+
+            &:hover,
+            &:focus {
+                outline: none;
+                border: none;
+                color: #F16D7F;
+            }
+
+            &-option {
+                border: none;
+            }
+        }
+    }
+}

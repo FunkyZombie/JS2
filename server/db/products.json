@@ -1,22 +1,90 @@
 [
   {
-    "id_product": 124,
-    "product_name": "Keyboard",
-    "price": 1600
+    "id": 1, 
+    "name": "Item 1", 
+    "price": 999, 
+    "imgURL": "./image/product-item01.jpg", 
+    "productURL": "./product.html", 
+    "type": "bags"
   },
   {
-    "id_product": 457,
-    "product_name": "Gamepad",
-    "price": 3000
+    "id": 2, 
+    "name": "Item 2", 
+    "price": 3455, 
+    "imgURL": "./image/product-item02.jpg", 
+    "productURL": "./product.html", 
+    "type": "access"
   },
   {
-    "id_product": 123,
-    "product_name": "Ноутбук",
-    "price": 45600
+    "id": 3, 
+    "name": "Item 3", 
+    "price": 7200, 
+    "imgURL": "./image/product-item03.jpg", 
+    "productURL": "./product.html", 
+    "type": "denim"
   },
   {
-    "id_product": 456,
-    "product_name": "Мышка",
-    "price": 1000
+    "id": 4, 
+    "name": "Item 4", 
+    "price": 8690, 
+    "imgURL": "./image/product-item04.jpg", 
+    "productURL": "./product.html", 
+    "type": "hoodies"
+  },
+  {
+    "id": 5, 
+    "name": "Item 5", 
+    "price": 5999, 
+    "imgURL": "./image/product-item05.jpg", 
+    "productURL": "./product.html", 
+    "type": "jackets"
+  },
+  {
+    "id": 6, 
+    "name": "Item 6", 
+    "price": 1500, 
+    "imgURL": "./image/product-item06.jpg", 
+    "productURL": "./product.html", 
+    "type": "polos"
+  },
+  {
+    "id": 7, 
+    "name": "Item 7", 
+    "price": 3499, 
+    "imgURL": "./image/product-item07.jpg", 
+    "productURL": "./product.html", 
+    "type": "shirts"
+  },
+  {
+    "id": 8, 
+    "name": "Item 8", 
+    "price": 9000, 
+    "imgURL": "./image/product-item08.jpg", 
+    "productURL": "./product.html", 
+    "type": "shoes"
+  },
+  {
+    "id": 9, 
+    "name": "Item 9", 
+    "price": 4099, 
+    "imgURL": "./image/product-item09.jpg", 
+    "productURL": "./product.html", 
+    "type": "sweaters"
+  },
+  {
+    "id": 10, 
+    "name": "Item 10", 
+    "price": 2150, 
+    "imgURL": "./image/product-item010.jpg", 
+    "productURL": "./product.html", 
+    "type": "tshirts"
+  },
+  {
+    "id": 11, 
+    "name": "Item 11", 
+    "price": 6459, 
+    "imgURL": "./image/product-item011.jpg", 
+    "productURL": "./product.html", 
+    "type": "tanks"
   }
 ]
