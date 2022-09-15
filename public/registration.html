@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+<!--HEADER-->
+    <header-comp></header-comp>
+<!--MAIN-->
+<main class="main">
+    <section class="banner">
+        <div class="container banner__wrp">
+            <h1 class="banner__title">registration</h1>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="container registration__wrp">
+            <h2 class="visually-hidden">Registr Form</h2>
+            <div class="registration__form">
+                <form action="#">
+                    <fieldset>
+                        <legend class="registration__form-title">Your Name</legend>
+                        <label>
+                            <span class="visually-hidden">First Name</span>
+                            <input class="registration__form-area" type="text" name="firstUserName" placeholder="First Name" required>
+                        </label>
+                        <label>
+                            <span class="visually-hidden">Last Name</span> 
+                            <input class="registration__form-area" type="text" name="lastUserName" placeholder="Last Name" required>
+                        </label>
+                        <label class="radio-label" for="male">
+                            <input class="registration__form-radio" type="radio" name="gender" id="male" value="male" checked>
+                            Male
+                        </label>
+                        <label class="radio-label" for="famale">
+                            <input class="registration__form-radio" type="radio" name="gender" id="famale" value="famale">
+                            Famale
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="registration__form-title">Login details</legend>
+                        <label>
+                            <span class="visually-hidden">Enter Your Email</span>
+                            <input class="registration__form-area" type="email" placeholder="Email" required>
+                        </label>
+                        <label>
+                            <span class="visually-hidden">Enter Your Password</span>
+                            <input class="registration__form-area" type="password" placeholder="Password" required>
+                        </label>
+                        <p class="registration__form-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                        <input class="registration__form-button" type="submit" value="join now">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="registration__loyalty">
+                <h3 class="registration__loyalty-title">loyalty has its perks</h3>
+                <p class="registration__loyalty-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="registration__loyalty-list">
+                    <li class="registration__loyalty-item">15% off welcome offer</li>
+                    <li class="registration__loyalty-item">Free shipping, returns and exchanges on all orders</li>
+                    <li class="registration__loyalty-item">$10 off a purchase on your birthday</li>
+                    <li class="registration__loyalty-item">Early access to products</li>
+                    <li class="registration__loyalty-item">Exclusive offers & rewards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<!--FOOTER-->
+    <footer-comp></footer-comp>
+</div>
+<!--SCRIPT-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/components/cart-comp.js"></script>
+<script src="js/components/header-comp.js"></script>
+<script src="js/components/footer-comp.js"></script>
+<script src="js/components/products-comp.js"></script>
+<script src="js/components/navigation-comp.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

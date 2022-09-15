@@ -1,0 +1,125 @@
+.subscribe {
+    background: url(../image/subscribe-bkg.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 448px;
+
+    &__wrp {
+        padding: 97px 0 126px 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__review {
+        width: 360px;
+        height: auto;
+        text-align: center;
+    }
+
+    &__img {
+        margin: 0 0 26px 0;
+    }
+
+    &__title {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__form {
+        max-width: 557px;
+        height: auto;
+        text-align: center;
+        &-title {
+            font-family: 'Lato';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-transform: uppercase;
+        }
+        &-text {
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167.2%;
+            text-transform: uppercase;
+        }
+        &-email {
+            max-width: 349.5px;
+            height: 49px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            background-color: $gray-bkg;
+            margin: 32px auto 0 auto;
+        }
+        &-area {
+            width: 236px;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            padding: 0 0 0 25px;
+            margin: 0;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #222224;
+            opacity: 0.67;
+
+            &::placeholder {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: $black-bkg;
+                opacity: 0.67;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        &-button {
+            padding: 0;
+            margin: 0;
+            width: 85px;
+            height: calc(100% - 0.1px);
+            border: none;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background: $pink-color;
+            color: $white-color;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            cursor: pointer;
+            &:hover {
+                background: $white-color;
+                color: $pink-color;
+            }
+        }
+    } 
+}
+
+@media (max-width: $tablet-width) {
+    .subscribe__wrp {
+        flex-direction: column;
+    }
+
+    .subscribe__review {
+        margin-bottom: 48px;
+    }
+}
+
+
+
+
+
+
+
+

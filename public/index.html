@@ -2,31 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Интернет-магазин</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
 <body>
 <div id="app">
-    <header>
-        <div class="logo">E-shop</div>
-        <div class="cart">
-
-            <filter-el></filter-el>
-            <cart ref="cart"></cart>
-        </div>
-    </header>
-    <main>
-        <error ref="error"></error>
-        <products ref="products"></products>
-    </main>
+<!--HEADER-->
+    <header-comp></header-comp>
+<!--MAIN-->
+    <!-- <page> -->
+        <main class="main">
+            <section class="brand" slider-box>
+                <img class="brand__img" src="./image/slider01.jpg" alt="man">
+                <div class="brand__title-wrp">
+                    <h1 class="brand__title">the brand <span class="brand__title-lower">of luxerious <span class="brand__title-pink ">fashion</span></span></h1>
+                </div>
+            </section>
+            <section class="sales">
+                <div class="container">
+                  <h2 class="visually-hidden">sales</h2>
+                  <ul class="sales__list">
+                    <li class="sales__item sales__item--women">
+                      <p class="sales__item-text sales__text--position">30% off</p>
+                      <h3 class="sales__title">for women</h3>
+                    </li>
+                    <li class="sales__item sales__item--man">
+                      <p class="sales__item-text sales__text--position">hot deal</p>
+                      <h3 class="sales__title">for man</h3>
+                    </li>
+                    <li class="sales__item sales__item--kids">
+                      <p class="sales__item-text sales__text--position">new arrivals</p>
+                      <h3 class="sales__title">for kids</h3>
+                    </li>
+                    <li class="sales__item sales__item--shoes">
+                      <p class="sales__item-text sales__text-last--position">luxirous & trendy</p>
+                      <h3 class="sales__title">accesories</h3>
+                    </li>
+                  </ul>
+                </div>
+            </section>
+            <section class="product">
+                <div class="container">
+                    <h2 class="product__title">Fetured Items</h2>
+                    <p class="product__sub-title">Shop for items based on what we featured in this week</p>
+                    <div class="product__all-range"><a class="product__range-link" href="./catalog.html">Browse All Product</a></div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                  <h2 class="visually-hidden">advantages</h2>
+                  <ul class="advantages__list">
+                    <li class="advantages__item">
+                      <img class="advantages__item-image" src="./image/delivery.svg" alt="delivery">
+                      <h3 class="advantages__item-title">Free Delivery</h3>
+                      <p class="advantages__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li class="advantages__item">
+                      <img class="advantages__item-image" src="./image/discounts.svg" alt="delivery">
+                      <h3 class="advantages__item-title">Sales & discounts</h3>
+                      <p class="advantages__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li class="advantages__item">
+                      <img class="advantages__item-image" src="./image/quality.svg" alt="delivery">
+                      <h3 class="advantages__item-title">Quality assurance</h3>
+                      <p class="advantages__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+        </main>
+    <!-- </page> -->
+<!--FOOTER-->
+    <footer-comp></footer-comp>
 </div>
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<!--SCRIPT-->    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="js/ProductComponent.js"></script>
-<script src="js/CartComponent.js"></script>
-<script src="js/FilterComp.js"></script>
-<script src="js/ErrorComp.js"></script>
+    <script src="js/components/header-comp.js"></script>
+    <script src="js/components/navigation-comp.js"></script>
+    <script src="js/components/products-comp.js"></script>
+    <script src="js/components/cart-comp.js"></script>
+    <script src="js/components/footer-comp.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
