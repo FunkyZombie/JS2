@@ -1,0 +1,62 @@
+.header {
+    background: $black-bkg;
+    width: 100%;
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+    }
+    
+    &__box {
+        display: flex;
+        align-items: flex-end;
+        align-items: center;
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+        align-items: center;
+    }
+    
+    &__menu-list {
+        display: flex;
+    }
+    
+    &__menu-item {
+        margin: 0 25px 0 0;
+    }
+    
+    &__person-icon,
+    &__basket-icon {
+        fill: $white-color;
+        transition: .2s ease-in-out;
+    }
+    
+    &__menu-link:hover &__person-icon {
+        fill: $pink-color;
+    }
+    
+    &__menu-link:hover &__basket-icon {
+        fill: $pink-color;
+    }
+
+    &__menu-link:active &__person-icon {
+        fill: $pink-color + #222;
+    }
+
+    &__menu-link:active &__basket-icon {
+        fill: $pink-color + #222;
+    }
+}
+
+@media (max-width: $mobile-mid-width) {
+    .header__box {
+        padding: 0 10px;
+    }
+
+    .header__menu-person,
+    .header__menu-basket {
+        display: none;
+    }
+}

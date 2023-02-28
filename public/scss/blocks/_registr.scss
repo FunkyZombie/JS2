@@ -1,0 +1,206 @@
+.registration {
+    min-height: 600px;
+    padding: 64px 0 0 0;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between
+    }
+
+    &__form {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        
+        &-title {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0 0 20px 0;
+        }
+
+        &-area {
+            border-radius: 0;
+            border: 1px solid #A4A4A4;
+            width: 360px;
+            height: 45px;
+            margin: 0 0 20px 0;
+            padding: 0 0 0 10px;
+            box-sizing: border-box;
+
+            &:focus {
+                outline: none;
+                border: 1px solid $pink-color;
+            }
+        }
+
+        &-radio {
+            cursor: pointer;
+            width: 17px;
+            height: 17px;
+            margin: 0 10px 0 0;
+        }
+
+        &-text {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+
+        &-button {
+            background-color: transparent;
+            padding: 14px 38px;
+            text-decoration: none;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 16px;
+            color: $link-color;
+            border: 1px solid $pink-color;
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 39px 0 0 0;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                background-color: $pink-color;
+                color: $white-color;
+            }
+
+            &:active {
+                background-color: $pink-color + #222;
+                color: $white-color + #222;
+            }
+        }
+    }
+
+    &__form .radio-label {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 12px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        margin: 0 20px 33px 0;
+    }
+
+    &__loyalty {
+        max-width: 652px;
+        
+        &-title {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: $card-color;
+            text-transform: uppercase;
+            margin: 0 0 22px 0;
+        }
+
+        &-text {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0 0 21px 0;
+        }
+
+        &-item {
+            position: relative;
+            margin: 0 0 16px 45px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            
+            &:before {
+                content: '';
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 7px;
+                left: -45px;
+                background: url(../image/svg/marker.svg) no-repeat;
+                background-size: 18px 18px;
+            }
+        }
+    }
+}
+
+@media (max-width:  $desktop-mid-width) {
+    .banner {
+        padding: 0 0 0 22px;
+    }
+
+    .registration__wrp {
+        justify-content: space-around;
+    }
+
+    .registration__loyalty {
+        margin: 0 15px;
+    }
+
+    .registration__form {
+        margin: 0 15px;
+    }
+} 
+
+@media (max-width: $tablet-width) {
+    .registration__loyalty {
+        margin: 0; 
+    }
+
+    .registration__loyalty-title,
+    .registration__loyalty-item,
+    .registration__loyalty-text {
+        font-size: 16px;
+    }
+
+    .registration__form {
+        margin: 0 15px 0 0;
+    }
+}
+
+@media (max-width: 720px) and (min-width: 426px) {
+    .registration__wrp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration__form {
+        margin: 0;
+    }
+
+    .registration__loyalty {
+        max-width: 96%;
+        margin: 40px 0 96px 0;
+    }
+    .registration__form {
+        width: 100%;
+    }
+
+    .registration__form-area {
+        width: 100%;
+    }
+}
+
+@media (max-width: $mobile-mid-width) {
+    .registration__wrp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration__form {
+        margin: 0;
+    }
+
+    .registration__loyalty {
+        max-width: 96%;
+        margin: 40px 0 96px 0;
+    }
+}
